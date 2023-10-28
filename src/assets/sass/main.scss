@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'gerillass';
 
 // Configuration and helpers
 @import
@@ -13,11 +14,11 @@
 
 // Layout-related sections
 @import
-  '';
+  'layout/body';
 
 // Components
 @import
-  '';
+  'components/header';
 
 // Themes
 @import
