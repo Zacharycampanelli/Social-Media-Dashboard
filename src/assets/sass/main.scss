@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// Configuration and helpers
+@import
+  'abstracts/variables',
+  'base/fonts',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// Vendors
+@import
+  'vendors/normalize';
+
+// Layout-related sections
+@import
+  '';
+
+// Components
+@import
+  '';
+
+// Themes
+@import
+  'themes/default';
