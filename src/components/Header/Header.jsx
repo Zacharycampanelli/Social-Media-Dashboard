@@ -1,14 +1,10 @@
-import stats from '../../assets/data/stats.json'
-
-const Header = () => {
+const Header = (stats) => {
   return (
     <header>
       <h1>Social Media Dashboard</h1>
-      <p>Total Followers: {stats.total.toLocaleString()}</p>
-
-     
+      <p>Total Followers: {stats.stats.toLocaleString()}</p>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
