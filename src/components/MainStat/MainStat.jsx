@@ -1,11 +1,46 @@
-const MainStat = stat => {
-  let singleStat = stat.stat;
-  console.log(singleStat)
-    return (
-    <div>
-      
-    </div>
-  )
-}
+import ArrowUp from '../../assets/images/icon-up.svg'
+import ArrowDown from '../../assets/images/icon-down.svg'
+import formatNumber from "../../utils/formatNumber";
 
-export default MainStat
+const MainStat = ({ stat, icon }) => {
+  let singleStat = stat;
+  console.log(singleStat);
+  let currentSite = singleStat.website;
+  let website = '';
+  let statLabel = currentSite === 'youtube' ? 'SUBSCRIBERS' : 'FOLLOWERS'
+  let arrowDirection = singleStat.direction === "up" ? ArrowUp : ArrowDown;
+  switch (currentSite) {
+    case 'facebook':
+      website = 'facebook';
+      break;
+    case 'twitter':
+      website = 'twitter';
+      break;
+    case 'instagram':
+      website = 'instagram';
+      break;
+    case 'youtube':
+      website = 'youtube';
+      break;
+  }
+
+  return (
+    <div className={`main_stat main_border ${website}`}>
+      <div className="main_stat_header">
+        <img src={icon} alt={`${website}-icon`} />
+        <p id="user">@{stat.user}</p>
+      </div>
+      <div className="main_stat_main">
+      <p className='main_stat_main_number'>{formatNumber(stat.followers)}</p>
+      <p className='main_stat_main_label'>{statLabel}</p>
+
+      </div>
+      <div className="main_stat_direction_moved">
+      <img src={arrowDirection} alt={`${singleStat.direction}-arrow`} />
+      <p className={stat.direction}> {singleStat.movedNumber} Today</p>
+      </div>
+    </div>
+  );
+};
+
+export default MainStat;

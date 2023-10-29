@@ -1,0 +1,86 @@
+.main_stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    background: $lightGrayishBlue;
+    border-radius: 5px;
+    &_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        img {
+            padding: 8px;
+            width: 20px;
+            height: 20px;
+        }
+        #user {
+            font-size: 12px;
+        }
+    }
+
+    &_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &_number {
+            margin: 30px 0 5px;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+            color: $veryDarkBlue;
+        }
+        
+        &_label {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            color: $darkGrayishBlue;
+        }
+    }
+
+    &_direction_moved {
+        display: flex;
+        align-items: center;
+        margin: 6px 0 18px;
+        img {
+            padding-right: 4px;
+            width: 8px;
+            height: 4px;
+        }
+        .up, .down {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .up {
+            color: $limeGreen;
+        }
+        .down {
+            color: $brightRed
+        }
+    }
+}
+
+.main_border {
+    border-top-width: 4px;
+    border-top-style: solid;
+}
+
+.facebook {
+    border-color: $facebook;
+}
+
+.twitter {
+    border-color: $twitter;
+}
+
+.instagram {
+    border-image: linear-gradient(90deg, $instagramStart, $instagramEnd) 1;
+}
+
+.youtube {
+    border-color: $youTube;
+}
