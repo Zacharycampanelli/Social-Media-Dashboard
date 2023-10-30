@@ -10,22 +10,22 @@ const MainStat = ({ stat, icon }) => {
   let statLabel = currentSite === 'youtube' ? 'SUBSCRIBERS' : 'FOLLOWERS'
   let arrowDirection = singleStat.direction === "up" ? ArrowUp : ArrowDown;
   switch (currentSite) {
-    case 'facebook':
-      website = 'facebook';
+    case 'Facebook':
+      website = 'Facebook';
       break;
-    case 'twitter':
-      website = 'twitter';
+    case 'Twitter':
+      website = 'Twitter';
       break;
-    case 'instagram':
-      website = 'instagram';
+    case 'Instagram':
+      website = 'Instagram';
       break;
-    case 'youtube':
-      website = 'youtube';
+    case 'Youtube':
+      website = 'Youtube';
       break;
   }
-
+console.log(icon)
   return (
-    <div className={`main_stat main_border ${website}`}>
+    <div className={`main_stat main_border ${website.toLowerCase()}`}>
       <div className="main_stat_header">
         <img src={icon} alt={`${website}-icon`} />
         <p id="user">@{stat.user}</p>

@@ -2,28 +2,28 @@
   "total": 23004,
   "main": [
     {
-      "website": "facebook",
+      "website": "Facebook",
       "user": "nathanf",
       "followers": 1987,
       "direction": "up",
       "movedNumber": 12
     },
     {
-      "website": "twitter",
+      "website": "Twitter",
       "user": "nathanf",
       "followers": 1044,
       "direction": "up",
       "movedNumber": 99
     },
     {
-      "website": "instagram",
+      "website": "Instagram",
       "user": "realnathanf",
       "followers": 11000,
       "direction": "up",
       "movedNumber": 1099
     },
     {
-      "website": "youtube",
+      "website": "Youtube",
       "user": "Nathan F.",
       "followers": 8239,
       "direction": "down",
@@ -32,56 +32,56 @@
   ],
   "overview": [
     {
-      "website": "facebook",
+      "website": "Facebook",
       "stat": "Page Views",
       "statNumber": 87,
       "direction": "up",
       "movedNumber": 3
     },
     {
-      "website": "facebook",
+      "website": "Facebook",
       "stat": "Likes",
       "statNumber": 52,
       "direction": "down",
       "movedNumber": 2
     },
     {
-      "website": "instagram",
+      "website": "Instagram",
       "stat": "Likes",
       "statNumber": 5462,
       "direction": "up",
       "movedNumber": 2257
     },
     {
-      "website": "instagram",
+      "website": "Instagram",
       "stat": "Profile Views",
       "statNumber": 52000,
       "direction": "up",
       "movedNumber": 1375
     },
     {
-      "website": "twitter",
+      "website": "Twitter",
       "stat": "Retweets",
       "statNumber": 117,
       "direction": "up",
       "movedNumber": 303
     },
     {
-      "website": "twitter",
+      "website": "Twitter",
       "stat": "Likes",
       "statNumber": 507,
       "direction": "up",
       "movedNumber": 553
     },
     {
-      "website": "youtube",
+      "website": "Youtube",
       "stat": "Likes",
       "statNumber": 107,
       "direction": "down",
       "movedNumber": 19
     },
     {
-      "website": "youtube",
+      "website": "Youtube",
       "stat": "Total Views",
       "statNumber": 1407,
       "direction": "down",
