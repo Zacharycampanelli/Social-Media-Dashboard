@@ -1,4 +1,4 @@
-import MainStat from '../MainStat/MainStat';
+import Stat from '../Stat/Stat';
 
 import FacebookImage from '../../assets/images/icon-facebook.svg';
 import TwitterImage from '../../assets/images/icon-twitter.svg';
@@ -15,24 +15,21 @@ const StatContainer = ({ stats, type }) => {
   };
 
 
-  if (type === 'overview') {
-    return (
-      <div className="stat_container">
-        {stats.map((stat, i) => (
-          <OverviewStat stat={stat} icon={iconMap[stat.website]} key={i} />
-        ))}
-      </div>
-    )
-
-
-
-  }
+  // if (type === 'overview') {
+  //   return (
+  //     <div className="stat_container">
+  //       {stats.map((stat, i) => (
+  //         <OverviewStat stat={stat} icon={iconMap[stat.website]} key={i} />
+  //       ))}
+  //     </div>
+  //   )
+  // }
 
   console.log(stats);
   return (
     <div className="stat_container">
       {stats.map((stat, i) => (
-        <MainStat stat={stat} icon={iconMap[stat.website]} key={i} />
+        <Stat stat={stat} icon={iconMap[stat.website]} type={type} key={i} />
       ))}
     </div>
   );
