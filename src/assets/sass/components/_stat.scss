@@ -64,6 +64,67 @@
     }
 }
 
+.overview_stat {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 24px;
+    background: $lightGrayishBlue;
+    @include border-radius(5px);
+
+    &_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        width: 100%;
+    p { 
+        color: $darkGrayishBlue;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    }
+    &_body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &_label {
+            font-size: 32px;
+            font-weight: 700;
+            color: $veryDarkBlue;
+            margin: 0;
+        }
+
+        &_direction {
+            display: flex;
+            align-items: center;
+            img {
+                padding-right: 4px;
+                width: 8px;
+                height: 4px;
+            }
+            .up, .down {
+                font-size: 12px;
+                font-weight: 700;
+            }
+            .up {
+                color: $limeGreen;
+            }
+            .down {
+                color: $brightRed
+            }
+        
+          
+        }
+    }
+
+}
+
 .main_border {
     border-top-width: 4px;
     border-top-style: solid;

@@ -1,10 +1,10 @@
-import Stat from '../Stat/Stat';
+import Stat from '../MainStat/MainStat';
 
 import FacebookImage from '../../assets/images/icon-facebook.svg';
 import TwitterImage from '../../assets/images/icon-twitter.svg';
 import InstagramImage from '../../assets/images/icon-instagram.svg';
 import YoutubeImage from '../../assets/images/icon-youtube.svg';
-import OverviewStat from '../OverviewStat/OverviewStat';
+import Temp from '../SingleStatContainer/SingleStatContainer';
 
 const StatContainer = ({ stats, type }) => {
   let iconMap = {
@@ -15,21 +15,10 @@ const StatContainer = ({ stats, type }) => {
   };
 
 
-  // if (type === 'overview') {
-  //   return (
-  //     <div className="stat_container">
-  //       {stats.map((stat, i) => (
-  //         <OverviewStat stat={stat} icon={iconMap[stat.website]} key={i} />
-  //       ))}
-  //     </div>
-  //   )
-  // }
-
-  console.log(stats);
   return (
     <div className="stat_container">
       {stats.map((stat, i) => (
-        <Stat stat={stat} icon={iconMap[stat.website]} type={type} key={i} />
+        <Temp stat={stat} type={type} key={i} />
       ))}
     </div>
   );

@@ -1,16 +1,12 @@
-import OverviewStat from "../OverviewStat/OverviewStat"
-import StatContainer from "../StatContainer/StatContainer"
+import StatContainer from '../StatContainer/StatContainer';
 
-const Overview = ({stats, type}) => {
+const Overview = ({ stats, type }) => {
   return (
-    <div>
-            <h2>Overview - Today</h2>
-            <StatContainer stats={stats} type={type} />
-            
-            
-          
+    <div id='overview'>
+      <h2 id="overview_header">Overview - Today</h2>
+      <StatContainer stats={stats} type={type} />
     </div>
-  )
-}
+  );
+};
 
-export default Overview
+export default Overview;

@@ -4,28 +4,28 @@
     {
       "website": "Facebook",
       "user": "nathanf",
-      "followers": 1987,
+      "statNumber": 1987,
       "direction": "up",
       "movedNumber": 12
     },
     {
       "website": "Twitter",
       "user": "nathanf",
-      "followers": 1044,
+      "statNumber": 1044,
       "direction": "up",
       "movedNumber": 99
     },
     {
       "website": "Instagram",
       "user": "realnathanf",
-      "followers": 11000,
+      "statNumber": 11000,
       "direction": "up",
       "movedNumber": 1099
     },
     {
       "website": "Youtube",
       "user": "Nathan F.",
-      "followers": 8239,
+      "statNumber": 8239,
       "direction": "down",
       "movedNumber": 144
     }
