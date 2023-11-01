@@ -32,17 +32,17 @@ const SingleStatContainer = ({ stat, type }) => {
 
   if (type === 'overview') {
     return (
-      <div>
+      
         <OverviewStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />
-      </div>
+  
     );
   }
 
   if (type === 'main') {
     return (
-      <div>
+    
         <MainStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />
-      </div>
+   
     );
   }
 };

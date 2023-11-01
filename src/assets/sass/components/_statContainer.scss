@@ -1,5 +1,16 @@
 .stat_container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
+
+    @include screen-desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.wrap {
+    @include screen-desktop {
+        flex-wrap: wrap;
+    }
 }

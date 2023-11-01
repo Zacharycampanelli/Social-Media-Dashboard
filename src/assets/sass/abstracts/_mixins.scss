@@ -1,0 +1,4 @@
+@mixin screen-desktop {
+    @media screen and (min-width: #{$desktop}) { @content; }
+  }
+  

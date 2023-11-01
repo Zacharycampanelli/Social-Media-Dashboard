@@ -4,21 +4,16 @@ import FacebookImage from '../../assets/images/icon-facebook.svg';
 import TwitterImage from '../../assets/images/icon-twitter.svg';
 import InstagramImage from '../../assets/images/icon-instagram.svg';
 import YoutubeImage from '../../assets/images/icon-youtube.svg';
-import Temp from '../SingleStatContainer/SingleStatContainer';
+import SingleStatContainer from '../SingleStatContainer/SingleStatContainer';
 
 const StatContainer = ({ stats, type }) => {
-  let iconMap = {
-    Facebook: FacebookImage,
-    Twitter: TwitterImage,
-    Instagram: InstagramImage,
-    Youtube: YoutubeImage,
-  };
+
 
 
   return (
-    <div className="stat_container">
+    <div className={type === 'overview' ? `stat_container wrap` : `stat_container`}>
       {stats.map((stat, i) => (
-        <Temp stat={stat} type={type} key={i} />
+        <SingleStatContainer stat={stat} type={type} key={i} />
       ))}
     </div>
   );
