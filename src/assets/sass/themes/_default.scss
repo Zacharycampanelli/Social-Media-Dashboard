@@ -1,32 +1,79 @@
-// -----------------------------------------------------------------------------
-// When having several themes, this file contains everything related to the
-// default one.
-// -----------------------------------------------------------------------------
-
-
 .light {
-    .text {
-        color: $darkGrayishBlue;
-    }
+  // Text
+  h1 {
+    color: $veryDarkBlue;
+  }
+  p {
+    color: $darkGrayishBlue;
+  }
+  // Layout
+  .background {
+    background: $white;
+  }
+  //   Switch
+  .round-slider-container {
+    background: $lightModeToggle;
+  }
+  .round-slider {
+    background: $lightGrayishBlue;
+  }
+  // Toggle Container
+  #toggle_container_label {
+    color: $darkGrayishBlue;
+  }
 
-    .background {
-        background: $white;
-    }
+  //   Heaeder
+  header {
+    border-bottom-color: $purpleGray;
+  }
+  // Header Backgtound
+  #main_background {
+    background: $veryPaleBlue;
+    // Main Stat
+  }
+  .main_stat {
+    background: $lightGrayishBlue;
+  }
+  .main_stat_main_number {
+    color: $veryDarkBlue;
+  }
+  .main_stat_main_label {
+    color: $darkGrayishBlue;
+  }
+  //   Overview Stat
+  .overview_stat {
+    background: $lightGrayishBlue;
+  }
+  .overview_stat_body_label {
+    color: $veryDarkBlue;
+  }
 }
 
 body.dark {
-    background: $veryDarkBlue
-
+  background: $veryDarkBlue;
 }
 
 .dark {
-    .text {
-        // color: $desaturatedBlue;
-        color: red;
-    }
+  // Text
+  h1 {
+    color: $white;
+  }
 
-    .background {
- 
-        background: $darkDesaturatedBlue;
-    }
+  p {
+    color: $desaturatedBlue;
+  }
+  // Layout
+  .background {
+    background: $darkDesaturatedBlue;
+  }
+
+  //   Header
+  header {
+    border-bottom-color: $purpleBlue;
+  }
+
+  //   Header Background
+  #main_background {
+    background: $veryDarkBlueTwo;
+  }
 }

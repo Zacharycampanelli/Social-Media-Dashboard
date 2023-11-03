@@ -7,10 +7,10 @@
     align-items: center;
 }
 
- &_label {
+ &_label { 
     @include screen-desktop {
         margin: 0 13px 7px 0;
-        color: $purpleGray;
+       
     }
  }
 }

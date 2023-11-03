@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
-  background: $lightGrayishBlue;
+  
   @include border-radius(5px);
 
   @include screen-desktop {
@@ -41,14 +41,12 @@
       font-weight: 700;
       line-height: 48px;
       letter-spacing: -2px;
-      color: $veryDarkBlue;
     }
 
     &_label {
       font-size: 12px;
       font-weight: 400;
       letter-spacing: 5px;
-      color: $darkGrayishBlue;
     }
   }
 
@@ -80,7 +78,7 @@
   flex-direction: column;
   margin-bottom: 16px;
   padding: 24px;
-  background: $lightGrayishBlue;
+
   @include border-radius(5px);
  
   @include screen-desktop {
@@ -98,9 +96,7 @@
     align-items: center;
     margin-bottom: 24px;
     width: 100%;
-    p {
-      // color: $darkGrayishBlue;
-    }
+
     img {
       width: 20px;
       height: 20px;
@@ -116,7 +112,6 @@
     &_label {
       font-size: 32px;
       font-weight: 700;
-      color: $veryDarkBlue;
       margin: 0;
     }
 

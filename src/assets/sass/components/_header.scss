@@ -1,21 +1,19 @@
 header {
   padding-bottom: 1rem;
-  border-bottom: 1px solid $purpleGray;
-
-
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   @include screen-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: none
+    border: none;
   }
   h1 {
     font-size: 24px;
     font-weight: 700;
-    color: $veryDarkBlue;
 
     @include screen-desktop {
-        font-size: 28px;
+      font-size: 28px;
     }
   }
 

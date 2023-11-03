@@ -4,7 +4,6 @@ body {
     font-family: $fontFamily;
     font-size: 14px;
     font-weight: 700;
-    color: $darkGrayishBlue;
 
     @include screen-desktop {
         padding:  36px 162px;
