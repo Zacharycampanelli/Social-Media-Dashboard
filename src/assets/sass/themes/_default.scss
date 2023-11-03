@@ -19,6 +19,9 @@ body.light {
   //   Switch
   .round-slider-container {
     background: $lightModeToggle;
+    &:hover {
+        background: linear-gradient(to bottom, $toggleDarkModeStart, $toggleDarkModeEnd);
+    }
   }
   .round-slider {
     background: $lightGrayishBlue;
@@ -39,6 +42,10 @@ body.light {
 // Main Stat
   .main_stat {
     background: $lightGrayishBlue;
+    &:hover {
+        background: $darkerPurpleGray;
+        cursor: pointer;
+    }
   }
   .main_stat_main_number {
     color: $veryDarkBlue;
@@ -49,6 +56,10 @@ body.light {
   //   Overview Stat
   .overview_stat {
     background: $lightGrayishBlue;
+    &:hover {
+        background: $darkerPurpleGray;
+        cursor: pointer;
+    }
   }
   .overview_stat_body_label {
     color: $veryDarkBlue;
@@ -82,9 +93,16 @@ h2 {
     background: $darkDesaturatedBlue;
   }
     // Toggle Container
-    #toggle_container_label {
-        color: $desaturatedBlue;
-      }
+    #toggle_container {
+        &:hover #toggle_container_label {
+            color: $white;
+        }
+        &_label {
+            color: $desaturatedBlue;
+        }
+    }
+
+
 
   //   Header
   header {
@@ -98,6 +116,10 @@ h2 {
   // Main Stat
   .main_stat {
     background: $darkDesaturatedBlue;
+    &:hover {
+        background: $purpleBlue;
+        cursor: pointer;
+    }
   }
   .main_stat_main_number {
     color: $white;
@@ -108,6 +130,10 @@ h2 {
   //   Overview Stat
   .overview_stat {
     background: $darkDesaturatedBlue;
+    &:hover {
+        background: $purpleBlue;
+        cursor: pointer;
+    }
   }
   .overview_stat_body_label {
     color: $white;
