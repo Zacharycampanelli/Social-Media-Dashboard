@@ -1,0 +1,35 @@
+
+#toggle-btn {
+margin-bottom: 10px;
+}
+
+.round-slider-container{
+   
+    width: 62px;
+    height: 26px;
+    background: $lightModeToggle;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.round-slider {
+    width: 25px;
+    height: 22px;
+    border-radius: 50%;
+    background: $lightGrayishBlue;
+    top: 2px;
+    right: 2px;
+    position: absolute;
+}
+
+#checkbox-input:checked + .round-slider-container .round-slider {
+    transform: translateX(-32px);
+}
+
+#checkbox-input {
+    display: none;
+}

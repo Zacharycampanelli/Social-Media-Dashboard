@@ -7,7 +7,7 @@ const Header = (stats) => {
     <header>
       <div id="header_title_info">
         <h1>Social Media Dashboard</h1>
-        <p>Total Followers: {stats.stats.toLocaleString()}</p>
+        <p className='text'>Total Followers: {stats.stats.toLocaleString()}</p>
       </div>
       {isDesktopUp && <DarkModeMenu />}
     </header>

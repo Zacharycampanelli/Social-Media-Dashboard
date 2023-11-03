@@ -2,3 +2,31 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+
+.light {
+    .text {
+        color: $darkGrayishBlue;
+    }
+
+    .background {
+        background: $white;
+    }
+}
+
+body.dark {
+    background: $veryDarkBlue
+
+}
+
+.dark {
+    .text {
+        // color: $desaturatedBlue;
+        color: red;
+    }
+
+    .background {
+ 
+        background: $darkDesaturatedBlue;
+    }
+}
