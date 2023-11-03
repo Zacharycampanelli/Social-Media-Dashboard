@@ -5,16 +5,18 @@ import { ThemeContext } from '../../context/ThemeContext'
 const Switch = ({theme}) => {
   const { setTheme } = useContext(ThemeContext)
 
+  // Prevents theme from becomming undefined on first switch
   useEffect(() => {
     document.body.className = '';
-    document.body.classList.add(theme)
+    let themeString = theme === undefined ? 'dark' : theme;
+    document.body.classList.add(themeString)
   },[theme])
   
 
     const handleClick = () => {
    
       setTheme(() => 
-        setTheme(theme === 'light' || theme=== undefined ? 'dark' : 'light' ))
+        setTheme(theme === 'light'  ? 'dark' : 'light' ))
 
       }
           

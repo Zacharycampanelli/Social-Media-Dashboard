@@ -1,7 +1,13 @@
+body.light {
+    background: $white;
+  }
 .light {
   // Text
   h1 {
     color: $veryDarkBlue;
+  }
+  h2 {
+    color: $darkGrayishBlue;
   }
   p {
     color: $darkGrayishBlue;
@@ -29,8 +35,8 @@
   // Header Backgtound
   #main_background {
     background: $veryPaleBlue;
-    // Main Stat
-  }
+}
+// Main Stat
   .main_stat {
     background: $lightGrayishBlue;
   }
@@ -58,7 +64,9 @@ body.dark {
   h1 {
     color: $white;
   }
-
+h2 {
+    color: $white;
+}
   p {
     color: $desaturatedBlue;
   }
@@ -66,6 +74,17 @@ body.dark {
   .background {
     background: $darkDesaturatedBlue;
   }
+//   Switch
+.round-slider-container {
+    background: linear-gradient(to bottom, $toggleDarkModeStart, $toggleDarkModeEnd);
+  }
+  .round-slider {
+    background: $darkDesaturatedBlue;
+  }
+    // Toggle Container
+    #toggle_container_label {
+        color: $desaturatedBlue;
+      }
 
   //   Header
   header {
@@ -75,5 +94,22 @@ body.dark {
   //   Header Background
   #main_background {
     background: $veryDarkBlueTwo;
+  }
+  // Main Stat
+  .main_stat {
+    background: $darkDesaturatedBlue;
+  }
+  .main_stat_main_number {
+    color: $white;
+  }
+  .main_stat_main_label {
+    color: $desaturatedBlue
+  }
+  //   Overview Stat
+  .overview_stat {
+    background: $darkDesaturatedBlue;
+  }
+  .overview_stat_body_label {
+    color: $white;
   }
 }
