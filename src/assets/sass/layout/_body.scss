@@ -1,11 +1,11 @@
 body {
-    padding: 36px 24px;
-    position: relative;
-    font-family: $fontFamily;
-    font-size: 14px;
-    font-weight: 700;
+  position: relative;
+  padding: 36px 24px;
+  font-family: $fontFamily;
+  font-size: 14px;
+  font-weight: 700;
 
-    @include screen-desktop {
-        padding:  36px 162px;
-    }
+  @include screen-desktop {
+    padding: 36px 162px;
+  }
 }

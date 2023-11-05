@@ -1,0 +1,80 @@
+body.light {
+  background: $white;
+}
+.light {
+  // Text
+  h1 {
+    color: $veryDarkBlue;
+  }
+  h2 {
+    color: $darkGrayishBlue;
+  }
+  p {
+    color: $darkGrayishBlue;
+  }
+  // Layout
+  .background {
+    background: $white;
+  }
+  //   Switch
+  .round-slider-container {
+    background: $lightModeToggle;
+    &:hover {
+      background: linear-gradient(to bottom, $toggleDarkModeStart, $toggleDarkModeEnd);
+    }
+  }
+  .round-slider {
+    background: $lightGrayishBlue;
+  }
+  // Toggle Container
+  #toggle_container_label {
+    color: $darkGrayishBlue;
+  }
+
+  //   Heaeder
+  header {
+    border-bottom-color: $purpleGray;
+  }
+  // Header Backgtound
+  #main_background {
+    background: $veryPaleBlue;
+  }
+  // Main Stat
+  .main_stat {
+    background: $lightGrayishBlue;
+    &:hover {
+      background: $darkerPurpleGray;
+      cursor: pointer;
+    }
+    .main_stat_main_number {
+      color: $veryDarkBlue;
+    }
+    .main_stat_main_label {
+      color: $darkGrayishBlue;
+    }
+    .up {
+      color: $limeGreen;
+    }
+    .down {
+      color: $brightRed;
+    }
+    
+  }
+  //   Overview Stat
+  .overview_stat {
+    background: $lightGrayishBlue;
+    &:hover {
+      background: $darkerPurpleGray;
+      cursor: pointer;
+    }
+    .overview_stat_body_label {
+      color: $veryDarkBlue;
+    }
+    .up {
+      color: $limeGreen;
+    }
+    .down {
+      color: $brightRed;
+    }
+  }
+}

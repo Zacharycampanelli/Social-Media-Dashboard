@@ -1,34 +1,31 @@
-
 #toggle-btn {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.round-slider-container{
-   
-    width: 62px;
-    height: 26px;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+.round-slider-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 62px;
+  height: 26px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .round-slider {
-    width: 25px;
-    height: 22px;
-    border-radius: 50%;
-   
-    top: 2px;
-    right: 2px;
-    position: absolute;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 25px;
+  height: 22px;
+  border-radius: 50%;
 }
 
 #checkbox-input:checked + .round-slider-container .round-slider {
-    transform: translateX(-32px);
+  transform: translateX(-32px);
 }
 
 #checkbox-input {
-    display: none;
+  display: none;
 }
