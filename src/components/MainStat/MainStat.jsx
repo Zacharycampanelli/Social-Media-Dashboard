@@ -7,7 +7,7 @@ const MainStat = ({ stat, icon, arrow }) => {
     <div className={`main_stat main_border ${stat.website.toLowerCase()}`}>
       <div className="main_stat_header">
         <img src={icon} alt={`${stat.website}-icon`} />
-        <p id="user">@{stat.user}</p>
+        <p className="user">@{stat.user}</p>
       </div>
       <div className="main_stat_main">
         <p className="main_stat_main_number">{formatNumber(stat.statNumber)}</p>
