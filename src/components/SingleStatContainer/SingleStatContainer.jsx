@@ -31,19 +31,11 @@ const SingleStatContainer = ({ stat, type }) => {
   };
 
   if (type === 'overview') {
-    return (
-      
-        <OverviewStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />
-  
-    );
+    return <OverviewStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />;
   }
 
   if (type === 'main') {
-    return (
-    
-        <MainStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />
-   
-    );
+    return <MainStat stat={stat} icon={getIcon()} arrow={getArrowIcon()} />;
   }
 };
 
