@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Zacharycampanelli/Social-Media-Dashboard](https://github.com/Zacharycampanelli/Social-Media-Dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [campanelli-social-dashboard](https://campanelli-social-dashboard.netlify.app/)
 
 ## My process
 
